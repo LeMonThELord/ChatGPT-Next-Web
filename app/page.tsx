@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import Script from 'next/script';
 
 import { Home } from "./components/home";
 
@@ -13,6 +14,7 @@ export default async function App() {
       {serverConfig?.isVercel && (
         <>
           <Analytics />
+          <Script src="https://umami.sagafish.top/script.js" data-website-id="019cfef7-5272-4e6a-a3f0-7d22e18cf7c1">
         </>
       )}
     </>
